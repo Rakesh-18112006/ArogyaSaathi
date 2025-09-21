@@ -1,0 +1,183 @@
+/* Analytics.css */
+.analytics-container {
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.analytics-header h2 {
+  color: #1e293b;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.time-filter {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.time-filter button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.time-filter button:hover {
+  background: #f1f5f9;
+}
+
+.time-filter button.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.insight-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #e2e8f0;
+}
+
+.insight-card.high {
+  border-left-color: #ef4444;
+}
+
+.insight-card.medium {
+  border-left-color: #f59e0b;
+}
+
+.insight-card.low {
+  border-left-color: #10b981;
+}
+
+.insight-icon {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.insight-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.insight-content p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card h3 {
+  margin: 0 0 1rem 0;
+  color: #1e293b;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.summary-card p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.analytics-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e2e8f0;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .analytics-container {
+    padding: 1rem;
+  }
+  
+  .analytics-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .chart-container {
+    padding: 1rem;
+  }
+}

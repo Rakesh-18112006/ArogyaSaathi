@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.registration-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.registration-content {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.registration-header {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: slideDown 0.8s ease-out;
+}
+
+.registration-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.registration-logo-icon {
+  font-size: 36px;
+  color: #0ea5e9;
+  margin-right: 10px;
+}
+
+.registration-logo-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0c4a6e;
+}
+
+.registration-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0c4a6e;
+  margin-bottom: 10px;
+}
+
+.registration-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.registration-card {
+  display: flex;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: scaleIn 0.8s ease-out;
+}
+
+.registration-form-section {
+  flex: 1;
+  padding: 40px;
+}
+
+.registration-image-section {
+  flex: 1;
+  background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.registration-image-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.registration-image-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.registration-image-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.registration-image-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registration-form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.registration-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.registration-input-label {
+  font-size: 0.9rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.registration-input {
+  padding: 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+}
+
+.registration-input:focus {
+  outline: none;
+  border-color: #0ea5e9;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+.registration-input::placeholder {
+  color: #9ca3af;
+}
+
+.registration-select {
+  padding: 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+}
+
+.registration-select:focus {
+  outline: none;
+  border-color: #0ea5e9;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+.registration-password-toggle {
+  position: relative;
+}
+
+.registration-password-toggle-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.registration-button {
+  padding: 16px;
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.registration-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(16, 185, 129, 0.4);
+}
+
+.registration-button:active {
+  transform: translateY(0);
+}
+
+.registration-login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.registration-login-link a {
+  color: #0ea5e9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.registration-login-link a:hover {
+  text-decoration: underline;
+}
+
+.registration-progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.registration-progress::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #e5e7eb;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.registration-progress-step {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #6b7280;
+  position: relative;
+  z-index: 2;
+}
+
+.registration-progress-step.active {
+  background: #0ea5e9;
+  border-color: #0ea5e9;
+  color: white;
+}
+
+.registration-progress-step.completed {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { 
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from { 
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .registration-card {
+    flex-direction: column;
+  }
+  
+  .registration-image-section {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .registration-form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .registration-form-section {
+    padding: 30px 20px;
+  }
+  
+  .registration-title {
+    font-size: 1.8rem;
+  }
+  
+  .registration-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Form step animation */
+.registration-form-step {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Loading animation */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.registration-loading {
+  animation: spin 1s linear infinite;
+}
