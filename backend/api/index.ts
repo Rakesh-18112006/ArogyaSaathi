@@ -2,12 +2,12 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import mongoose from "mongoose";
-import config from "./config";
-import migrantRoutes from "./routes/migrant";
-import healthRoutes from "./routes/health";
-import accessRoutes from "./routes/access";
+import config from "../src/config";
+import migrantRoutes from "../src/routes/migrant";
+import healthRoutes from "../src/routes/health";
+import accessRoutes from "../src/routes/access";
 import jwt from "jsonwebtoken";
-import User from "./models/User";
+import User from "../src/models/User";
 import bcrypt from "bcrypt";
 
 const app = express();
