@@ -64,4 +64,6 @@ app.use("/api/migrants", migrantRoutes);
 app.use("/api/health", healthRoutes);
 app.use("/api/access", accessRoutes);
 
-export default app; 
+app.listen(5000, () => {
+  console.log("Server started on http://localhost:5000");
+});
